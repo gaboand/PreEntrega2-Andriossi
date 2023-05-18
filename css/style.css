@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Dosis', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    /* background-color: #fdfdfd;    */
+    background-color: #1c1c1c;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.3);  
+}
+
+.logo{
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+}
+
+
+.datos{ 
+  font-size: 0;
+}
+
+.grid{
+    display: grid;
+    height: 100vh;
+    background-color: #c5c5c5;
+    grid-template-columns: 100%;
+    grid-template-rows: 180px auto 19% 12%;
+    grid-template-areas: 
+    "aside"
+    "main"
+    "suscripcion"
+    "footer";
+}
+
+.aside{ 
+    grid-area: aside;
+    width: 100%;
+    background-color: #6b6b66;
+}
+
+.main{  
+    grid-area: main;
+    background-color: #767863;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+}
+
+.pic1{
+    width: 100%;   
+}
+
+.item{
+    background-color: #fffffc;
+    width: 98%;  
+    height: 110px;
+    color: #050505;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foto{
+    width: 20%;
+    height: 80%;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.nombre{
+    font-size: x-small;
+    font-weight: bold;
+    margin-left: 10px;
+}
+  
+.descrip{   
+    font-size: xx-small;
+}
+
+.precio{
+  text-align: end;
+  color: #15608f;
+  font-weight: bold;
+  font-size: x-small;
+}
+
+.agregar {
+    width: 42px;
+    height: 20px;
+    padding: 3px;
+    background-color: #ec945a; 
+    color: #ffffff; 
+    font-size: xx-small;
+    border: none;
+    border-radius: 10px;
+}
+
+.suscripcion{
+    width: 100%;
+    grid-area: suscripcion;
+    background-color: #575555;   
+}
+ 
+  .formulario-suscripcion h2 {
+    margin-top: 3px;
+    margin-bottom: 5px;
+    font-size: small;
+    text-align: center;
+    color: #dddddd;
+}
+  
+  .formulario-suscripcion form {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    align-items: center;
+}
+
+  .name{
+    width: 300px;
+    height: 20px;
+    text-align: center;
+}
+  
+  .phone{
+    width: 300px;
+    height: 20px;
+    text-align: center;
+}
+  
+  .mail{
+    width: 300px;
+    height: 20px;
+    text-align: center;
+}
+  
+  .formulario-suscripcion button[type="submit"] {
+    width: 120px;
+    align-self: center;
+    padding: 5px;
+    background-color: #ed7a32;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin: 4px;
+    font-weight: 900;
+}
+  
+   .footer {
+    width: 100%;
+    margin-bottom: 20px;
+    grid-area: footer;
+    background-color: #121111;
+} 
+
+  .datos-contacto p {
+    margin: 0;
+    font-size: medium;
+    font-weight: bold;
+    margin: 3px;
+    text-align: center;
+    color: #ffffff;
+}
+  
+  .copyright {
+    text-align: center;
+    color: #ffffff;
+    font-size: x-small;
+}
+
+
+
+@media (min-width: 1024px) {
+
+header{
+    width: 100%;
+    height: 160px;
+    /* background-color: #fdfdfd;    */
+    background-color: #1c1c1c;    
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.grid {
+		
+    grid-template-columns: 25% 25% 25% 25%;
+		grid-template-rows: 100px auto 90px 100px;
+		grid-template-areas:
+			"aside main main main"
+			"aside main main main"
+      "suscripcion suscripcion suscripcion suscripcion"
+			"footer footer footer footer";
+}
+
+  .logo{
+    width: 120px;
+    height: 120px;
+    margin: 15px;
+ 
+}
+
+  .datos{
+    color: #c5c5c5;
+    width: 200px;
+    height: 60px;
+    font-size: small;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  .aside{ 
+    grid-area: aside;
+    width: 100%;
+    margin-top: 160px;
+    background-color: #6b6b66;
+  }
+
+  h1{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: xx-large;
+    text-align: center;
+    font-family: 'Dosis';
+    font-weight: bold;
+    /* text-shadow: 1px 5px 4px #fcfcfb; */
+}
+
+  .main{
+    margin-top: 160px;
+    grid-area: main;
+    background-color: #767863;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+  .pic1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: start; 
+}
+
+  .item{
+    background-color: #fffffc;
+    width: 20%;  
+    height: 250px;
+    color: rgb(5, 5, 5);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+  .foto{
+    width: 100px;
+    height: 100px;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+  .nombre{
+    font-size: medium;
+    font-weight: bold;
+    align-self: start;
+}
+
+  .descrip{   
+    font-size: x-small;
+    align-self: start;
+    
+}
+
+  .precio{
+    align-self: end;
+    text-align: end;
+    color: #15608f;
+    font-weight: bold;
+    font-size: medium;
+    margin-right: 5px;
+    
+}
+
+  .agregar {
+    width: 70px;
+    height: 25px;
+    padding: 5px 6px;
+    background-color: #ec8c4d; 
+    color: #ffffff; 
+    font-size: x-small;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    margin-top: 5px;
+    align-self: end;
+    margin-right: 5px;
+}
+
+  .suscripcion{
+    width: 100%;
+    grid-area: suscripcion;
+    background-color: #575555;
+}
+
+  .footer {
+    width: 100%;
+    margin-bottom: 20px;
+    grid-area: footer;
+    background-color: #121111;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff
+} 
+
+  .formulario-suscripcion h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: medium;
+    text-align: center;
+}
+
+  .formulario-suscripcion form {
+    display: flex;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+  .name{
+    width: 250px;
+    height: 30px;
+    text-align: start;
+}
+
+  .phone{
+    width: 200px;
+    height: 30px;
+    text-align: start;
+}
+
+  .mail{
+    width: 300px;
+    height: 30px;
+    text-align: start;  
+}
+
+  .formulario-suscripcion button[type="submit"] {
+    width: 120px;
+    align-self: center;
+    padding: 5px;
+    background-color: #ed7a32;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin: 4px;
+    font-weight: 900;
+}
+
+  .datos-contacto p {
+    margin: 0;
+    font-size: medium;
+    font-weight: bold;
+    margin: 3px;
+    text-align: center;
+}
+
+  .copyright {
+    text-align: center;
+    color: #fff;
+    font-size: x-small;
+}
+
+}
+
