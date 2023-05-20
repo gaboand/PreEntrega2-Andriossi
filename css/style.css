@@ -132,8 +132,10 @@
 }
 
 .descrip {
+  width: 25%;
   font-size: xx-small;
-  color: #fff;
+  margin: 5px;
+  text-justify: auto;
 }
 
 .precio {
@@ -390,8 +392,13 @@
   }
 
   .descrip {
+    width: auto;
+    padding: 5px;
     font-size: x-small;
     align-self: start;
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
 
   }
 
