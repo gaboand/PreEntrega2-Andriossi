@@ -705,3 +705,133 @@
 .temporada__container img:hover{
   border: 10px solid #232323;
 }
+
+/* Carrito */
+
+.carrito__principal {
+  background-color: #0f0f0f;
+  padding: 10px 10px 15px;
+}
+
+.carrito__titulo {
+  margin-top: 100px;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #f9f9f9;
+}
+
+@media (min-width: 1024px) {
+  .carrito__principal {
+    background-color: #0f0f0f;
+    padding: 40px 45px 40px;
+  }
+
+  .carrito__titulo {
+    margin-top: 150px;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #f9f9f9;
+    font-family: 'Montserrat', 'Dosis', sans-serif;
+  } 
+}
+
+.carrito__eleccion{
+  border: 2px solid rgb(160, 159, 159, 0.7);
+  margin: 10px;
+  padding: 5px 15px;
+  margin-bottom: 15px;
+} 
+
+.carrito__item{ 
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  align-items: center;
+}
+
+.carrito__nombre {
+  color: white;
+  font-weight: 900;
+}
+
+.carrito__precio{
+  color: #1098ed;
+  font-weight: 900;
+}
+.carrito__foto{
+  width: 80px;
+  height: 80px;
+} 
+
+.carrito__compra{
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  padding: 8px;
+  gap: 15px;
+  
+}
+
+.carrito__datospago{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.carrito__botonpagos{
+  width: 150px; 
+  height: 20px; 
+  color: #dbdbdb; 
+  background-color: #ed7a32;
+  border:none; 
+  border-radius: 10px; 
+  font-weight: 900;
+}
+
+@media (min-width: 1024px){
+  .carrito__eleccion{
+    margin: 15px 120px;
+  }
+  
+  .carrito__item{
+    justify-content: space-between;
+    margin: 10px 50px 10px;
+  }
+
+  .carrito__nombre {
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+  }
+
+  .carrito__precio{
+    color: #1098ed;
+    font-weight: 900;
+    font-size: 20px;
+  }
+  .carrito__foto{
+    width: 120px;
+    height: 120px;
+  } 
+
+  .carrito__botonpagos{
+    width: 250px; 
+    height: 25px;
+    font-size: 15px; 
+    color: #dbdbdb;
+    background-color: #ed7a32;
+    border:none; 
+    border-radius: 10px; 
+    font-weight: 900;
+
+  }
+  
+ }
+
+
+
