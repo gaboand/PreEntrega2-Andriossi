@@ -833,5 +833,125 @@
   
  }
 
+/* contacto */
 
 
+.contacto__body {
+  overflow: hidden;
+  background-color: black;
+}
+
+
+.contacto__head{
+  display: flex;
+  flex-direction: column  ;
+  align-items: center;
+}
+.contacto__head img{
+  width: 40%;
+  height: 40%x;
+  margin-top: 60px;
+}
+
+.contacto__head h1{
+  margin-top: 60px;
+  font-size: 50px;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Montserrat', 'Dosis', sans-serif;
+  
+}
+
+@media (min-width: 1024px){
+  .contacto__head img{
+      width: 10%;
+      height: 10%x;
+      margin-top: 40px;
+
+}
+.contacto__head h1{
+  margin-top: 20px;
+  font-size: 40px;
+  text-align: center;
+  color: #ffffff;
+  
+}
+}
+
+.contacto__principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+
+
+.contacto__contenedor {
+  margin-top: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 1024px){
+  .contacto__contenedor {
+      margin-top: 40px;
+  }
+
+}
+
+.contacto__contenedor .contacto__mensaje {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+}
+
+.contacto__contenedor .contacto__mensaje h2 {
+  /* position: relative; */
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 10px;
+}
+
+.contacto__campos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacto__contenedor .contacto__mensaje .inputBox {
+  margin-top: 15px;
+  
+}
+.contacto__contenedor .contacto__mensaje .inputBox input {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contacto__contenedor .contacto__mensaje .inputBox input::placeholder {
+  color: #afafaf;
+}
+
+.contacto__contenedor .contacto__mensaje .inputBox input[type="submit"] {
+  background: #dedbdb;
+  color: #474646;
+  max-width: 100px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: 600; 
+}
