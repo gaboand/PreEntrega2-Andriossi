@@ -231,14 +231,14 @@
 
 .whatsapp-icon {
   position: fixed;
-  bottom: 10px; 
-  right: 10px; 
-  z-index: 999; 
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
   width: 40px;
   height: 40px;
   background-image: url('Whatsapp.png');
-  background-size: cover; 
-  background-repeat: no-repeat; 
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -345,7 +345,7 @@
     text-align: center;
     font-family: 'Dosis';
     font-weight: bold;
-    
+
   }
 
   .main-index {
@@ -367,7 +367,7 @@
   .item {
     background-color: #171212;
     width: 20%;
-    height: 250px;
+    height: 260px;
     color: rgb(255, 255, 255);
     border: 1px solid black;
     border-radius: 10px;
@@ -431,7 +431,7 @@
     width: 100%;
     grid-area: suscripcion;
     background-color: #575555;
-    
+
   }
 
   .footer-index {
@@ -446,7 +446,7 @@
   }
 
   .formulario-suscripcion h2 {
-    padding:  15px;
+    padding: 15px;
     font-size: x-large;
     text-align: center;
   }
@@ -456,7 +456,7 @@
     padding: 15px;
     flex-direction: row;
     justify-content: space-evenly;
- }
+  }
 
   .name {
     width: 250px;
@@ -500,26 +500,28 @@
     color: #fff;
     font-size: x-small;
   }
+
   .whatsapp-icon {
     position: fixed;
-    bottom: 20px; 
-    right: 20px; 
-    z-index: 999; 
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
     width: 60px;
     height: 60px;
     background-image: url('Whatsapp.png');
-    background-size: cover; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
 
 /* showroom */
 
-.galeria{
+.galeria {
   background-color: #0f0f0f;
   padding: 10px 10px 15px;
 }
+
 .galeria h3 {
   margin-top: 100px;
   font-size: 24px;
@@ -529,11 +531,12 @@
   color: #f9f9f9;
 }
 
-@media (min-width: 1024px){
-  .galeria{
+@media (min-width: 1024px) {
+  .galeria {
     background-color: #0f0f0f;
     padding: 40px 45px 40px;
   }
+
   .galeria h3 {
     margin-top: 150px;
     font-size: 40px;
@@ -544,6 +547,7 @@
   }
 
 }
+
 .galeria-container {
   display: flex;
   flex-direction: column;
@@ -552,22 +556,29 @@
 
 @media (min-width: 1024px) {
   .galeria-container {
-      display: flex;
-      flex-direction: row;
-      gap: 75px;
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
   }
 }
 
 .galeria-imagenes {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(2, 100px);
   gap: 24px;
+  padding: 20px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .galeria-imagenes {
-      flex-basis: 60%;
+      flex-basis: 50%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 250px);
+      gap: 24px;
+      padding: 40px;
+
   }
 }
 
@@ -577,6 +588,7 @@
   object-fit: cover;
   border-radius: 8px;
   border: 2px solid white;
+  
 }
 
 .galeria-img-1 {
@@ -592,13 +604,16 @@
 .galeria-img-3 {
   grid-column: 2 /3;
   grid-row: 2 / 3;
+  object-fit: fill;
 }
 
-.galeria-texto{
+.galeria-texto {
   display: flex;
   flex-direction: column;
-  gap: 42px;
+  gap: 40px;
+  margin-top: 10px;
 }
+
 .galeria-texto p {
   text-align: center;
   font-size: 14px;
@@ -608,15 +623,85 @@
 
 @media (min-width: 1024px) {
   .galeria-texto {
-      flex-basis: 40%;
-      text-align: left;
+    flex-basis: 50%;
+  }
+
+  .galeria-texto p {
+    font-size: 22px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.7);
+
   }
 
 }
 
-@media (min-width: 1024px) {
-  .galeria-texto p {
-      text-align: left;
-  }
+/* Temporadas */
 
+.temporada__container{
+  background-color: #232323;
+  width: 100%;
+  padding: 0 20px 0;
+}
+
+@media (min-width: 1024p4){
+.temporada__container{
+  background-color: #232323;
+  width: 100%;
+  padding: 0 100px 0;
+}
+}
+
+.temporada__titulo{
+  margin-top: 80px;
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Montserrat', 'Dosis', sans-serif;
+}
+
+@media (min-width: 1024px){
+.temporada__titulo{
+  margin-top: 145px;
+  font-size: 40px;
+  }
+}
+
+.text-center  {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+@media (min-width: 1024px){
+.text-center  {
+  padding: 20px;
+  font-size: 22px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.7);
+
+}
+}
+
+.temporada__container .clo-lg-4{
+  padding: 25px;
+}
+
+.temporada__container img{
+  width: 100%;
+  height: 400px;  
+  padding: 10px 20px;
+  
+}
+
+@media (min-width: 1024px){
+.temporada__container img{
+  width: 100%;
+  height: 400px;  
+  padding: 10px 20px;
+}
+}
+
+.temporada__container img:hover{
+  border: 10px solid #232323;
 }

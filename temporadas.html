@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,65 +8,83 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <title>Voila</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Voila Temporada</title>
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-        <img src="images/logo.png" alt="Logo">
-        </div>
-        <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="showroom.html">Showroom</a></li>
-            <li><a href="temporadas.html">Temporadas</a></li>
-            <li><a href="carrito.html">Carrito de Compras</a></li>
-        </ul>
+    <header class="header-index">
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+        <nav class="nav-index">
+            <div class="menu"><a href="carrito.html">CNTCT</a><span class="titulo">Contacto</span></div>
+            <div class="menu"><a href="temporadas.html">TMPRD</a><span class="titulo">Temporada</span></div>
+            <div class="menu"><a href="showroom.html">SHWRM</a><span class="titulo">Showroom</span></div>
+            <div class="menu"><a href="carrito.html">CMPR</a><span class="titulo">carrito</span></div>
         </nav>
-        <div class="datos-contacto">
-        <p>Teléfono: 11-9999-9999</p>
-        <p>Dirección: Pto Bernejo 145, CABA</p>
-        <p>Email: info@voila.com</p>
-        </div>
+        <div class="datos">Dirección: Calle 1235 - Barrio Tel: 11-9999-9999 info@voila.com.ar</div>
     </header>
-    <main>
-        <section class="temporadas">
-            <img class="foto2" src="images/Captura7.PNG" alt="Showroom">
-            <img class="foto2" src="images/Captura8.PNG" alt="Showroom">
-            <img class="foto2" src="images/Captura9.PNG" alt="Showroom">
-            <img class="foto2" src="images/Captura10.PNG" alt="Showroom">
-            <img class="foto2" src="images/Captura11.PNG" alt="Showroom">
-            <img class="foto2" src="images/Captura12.PNG" alt="Showroom">
-            <img class="foto2" src="images/Captura13.PNG" alt="Showroom">
-            <img class="foto2" src="images/Captura14.PNG" alt="Showroom">
-            <img class="foto2" src="images/Captura15.PNG" alt="Showroom">
-            <img class="foto2" src="images/Captura16.PNG" alt="Showroom">
-            <img class="foto2" src="images/Captura17.PNG" alt="Showroom">
+        
+        <section class="temporada__container">
+            <div class="text-center pt-5">
+                <h1 class="temporada__titulo">Nueva Temporada</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, nihil quia illo eos sit, facilis molestias soluta excepturi repellendus, Magnam.</p>
+            </div>
 
+            <div class="temporada__imagenes row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="images/Captura16.PNG" class="rounded-5"alt="imagen nueva temporada">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="images/Captura11.PNG" class="rounded-5" alt="imagen nueva temporada">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="images/Captura12.PNG" class="rounded-5" alt="imagen nueva temporada">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="images/Captura13.PNG" class="rounded-5" alt="imagen nueva temporada">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="images/Captura14.PNG" class="rounded-5" alt="imagen nueva temporada">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="images/Captura15.PNG" class="rounded-5" alt="imagen nueva temporada">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="images/Captura17.PNG" class="rounded-5" alt="imagen nueva temporada">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="images/Captura9.PNG" class="rounded-5" alt="imagen nueva temporada">
+                </div>
+                
+                
+            </div>
         </section>
-    </main>
-
-    <footer id="contacto">
+    <section class="suscripcion-index">
         <div class="formulario-suscripcion">
-        <!-- Formulario de suscripción -->
-        <h2>Suscribite para recibir noticias y promociones</h2>
-        <form action="#" method="post">
-            <input type="text" placeholder="Nombre" required>
-            <input type="tel" placeholder="Teléfono" required>
-            <input type="email" placeholder="Correo Electrónico" required>
-            <button type="submit">Suscribirse</button>
-        </form>
+            <h2>Suscribite para recibir noticias y promociones</h2>
+            <form action="#" method="post">
+                <input class="name" type="text" placeholder="Nombre" required>
+                <input class="phone" type="tel" placeholder="Teléfono" required>
+                <input class="mail" type="email" placeholder="Correo" required>
+                <button type="submit">Suscribirse</button>
+            </form>
         </div>
-        <div class="datos-contacto-footer">
-        <!-- Datos de contacto adicionales -->
-        <p>Teléfono: 11-9999-9999</p>
-        <p>Email: info@voila.com.ar</p>
+    </section>
+    <footer class="footer-index">
+        <div class="datos-contacto">
+            <p>Teléfono: 11-9999-9999</p>
+            <p>Email: info@voila.com.ar</p>
         </div>
         <div class="copyright">
-        <!-- Copyright -->
-        <p>&copy; 2023 Voila Clothes. Todos los derechos reservados.</p>
+            <p>&copy; 2023 Voila Clothes. Todos los derechos reservados.</p>
         </div>
     </footer>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
