@@ -8,12 +8,21 @@
 .header-index {
   width: 100%;
   height: 100px;
-  background-color: #000000;
+  background-color: #1c1c1c;
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: fixed;
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+@media (min-width: 1024px) {
+
+  .header-index {
+    height: 160px;
+    justify-content: space-between;
+    }
 }
 
 .logo {
@@ -22,54 +31,84 @@
   margin: 5px;
 }
 
+@media (min-width: 1024px){
+  .logo {
+    width: 120px;
+    height: 120px;
+    margin: 15px;
+  }
+}
+
 .nav-index {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  justify-content: center;
 }
 
-.menu {
-  width: 40px;
-  height: 40px;
-  background-color: #121212;
-  margin: 5px;
-  padding: 3px;
-  border-radius: 50%;
-  font-size: 7px;
-  line-height: 26px;
-  text-transform: uppercase;
-  text-align: center;
-  box-shadow: 0 10px 15px rgba(102, 102, 102, 0.1);
+.nav-index li {
+  margin-right: 10px;
+}
+
+.nav-index li a {
   display: flex;
-  flex-direction: column;
   align-items: center;
-}
-
-.menu:hover {
-  opacity: 0.5;
-  -moz-opacity: 0.5;
-}
-
-.menu a {
-  color: #fff;
+  justify-content: center;
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: #333333;
   text-decoration: none;
-  padding: 2px 2px 2px 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
 }
 
-.titulo {
-  opacity: 1;
-  color: #6e6d6d;
-
+.nav-index li a:hover {
+  background-color: #555555;
 }
 
-.titulo:hover {
-  transform: scale(1);
-  transition-delay: 0.25s;
-  opacity: 1;
-  color: #fff;
+@media (min-width: 1024px){
+  .nav-index {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-index li {
+    margin-right: 10px;
+  }
+  
+  .nav-index li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #333333;
+    text-decoration: none;
+    border-radius: 35px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+  }
+  
+  .nav-index li a:hover {
+    background-color: #555555;
+  }
 }
+
 
 .datos {
   font-size: 0;
+}
+
+@media (min-width: 1024px){
+  .datos {
+    color: #c5c5c5;
+    width: 200px;
+    height: 60px;
+    font-size: small;
+    margin-right: 10px;
+    text-align: center;
+  }
 }
 
 .grid-index {
@@ -77,7 +116,7 @@
   height: 100vh;
   background-color: #121212;
   grid-template-columns: 100%;
-  grid-template-rows: 180px auto 24% 12%;
+  grid-template-rows: 130px auto 24% 12%;
   grid-template-areas:
     "aside"
     "main"
@@ -85,10 +124,47 @@
     "footer";
 }
 
+@media (min-width: 1024px){
+  .grid-index {
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100px auto 130px 125px;
+    grid-template-areas:
+      "aside main main main"
+      "aside main main main"
+      "suscripcion suscripcion suscripcion suscripcion"
+      "footer footer footer footer";
+  }
+}
+
 .aside-index {
   grid-area: aside;
   width: 100%;
-  background-color: #232323;
+  background-color: #6b6b66;
+}
+
+.pic1 {
+  width: 100%;
+}
+
+@media (min-width: 1024px){
+  .aside-index {
+     margin-top: 160px;
+  }
+
+  h1 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: xx-large;
+    text-align: center;
+    font-family: 'Dosis';
+    font-weight: bold;
+  }
+  
+  .pic1 {
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+  }
 }
 
 .main-index {
@@ -96,64 +172,86 @@
   background-color: #000000;
   display: flex;
   flex-wrap: wrap;
-  align-content: start;
-}
-
-.pic1 {
-  width: 100%;
+  align-content: center;
+  justify-content: center;
 }
 
 .item {
   background-color: #171212;
-  width: 98%;
-  height: 110px;
+  width: 80%;
   color: #f9f9f9;
   margin: 5px;
   border: 1px solid rgb(48, 48, 48);
   border-radius: 10px;
   padding: 5px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
 .foto {
-  width: 20%;
-  height: 80%;
-  border: 1px solid grey;
+  width: 95%;
+  
   border-radius: 5px;
+  margin-bottom: 5px;
 }
 
 .nombre {
-  font-size: x-small;
-  font-weight: bold;
+  font-size: 14px;
   margin-left: 10px;
   color: #ffffff;
-}
-
-.descrip {
-  width: 25%;
-  font-size: xx-small;
-  margin: 5px;
-  text-justify: auto;
+  opacity: 0.6;
+  padding: 5px;
+  text-transform: uppercase;
 }
 
 .precio {
-  text-align: end;
-  color: #1098ed;
-  font-weight: bold;
-  font-size: x-small;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.6;
+  font-size: 15px;
+  padding: 5px 5px 10px;
 }
 
 .agregar {
-  width: 42px;
-  height: 20px;
-  padding: 3px;
-  background-color: #ce5504;
-  color: #ffffff;
-  font-size: xx-small;
+  padding: 4px 8px;
+  background-color: #948d88;
+  color: #000000;
+  font-size: 14px;
   border: none;
-  border-radius: 10px;
+  border-radius: 3px;
+}
+
+@media (min-width: 1024px){
+  .main-index {
+    margin-top: 160px;
+    background-color: #767863;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  1fr;
+    justify-items: center;
+  }
+
+  .item {
+    justify-content: space-evenly;
+  }
+
+  .foto {
+    width: 100%x;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+
+  .nombre {
+    font-size: 14px;
+    align-self: center;
+  }
+
+  .agregar {
+    padding: 4px 8px;
+    font-size: 15px;
+    margin: 5px 0 10px;
+    }
 }
 
 .suscripcion-index {
@@ -243,181 +341,7 @@
 
 @media (min-width: 1024px) {
 
-  .header-index {
-    width: 100%;
-    height: 160px;
-    background-color: #1c1c1c;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.3);
-  }
-
-  .grid-index {
-
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 100px auto 130px 125px;
-    grid-template-areas:
-      "aside main main main"
-      "aside main main main"
-      "suscripcion suscripcion suscripcion suscripcion"
-      "footer footer footer footer";
-  }
-
-  .logo {
-    width: 120px;
-    height: 120px;
-    margin: 15px;
-  }
-
-  .nav-index {
-    display: flex;
-    justify-content: center;
-  }
-
-  .menu {
-    width: 60px;
-    height: 60px;
-    background-color: #1c1c1c;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 50%;
-    font-size: 10px;
-    font-weight: bold;
-    line-height: 32px;
-    text-transform: uppercase;
-    text-align: center;
-    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu:hover {
-    opacity: 0.5;
-    -moz-opacity: 0.5;
-  }
-
-  .menu a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 5px 5px 0;
-  }
-
-  .titulo {
-    opacity: 1;
-    color: #5e5e5e;
-  }
-
-  .titulo:hover {
-    transform: scale(1);
-    transition-delay: 0.25s;
-    opacity: 1;
-    color: #fff;
-  }
-
-  .datos {
-    color: #c5c5c5;
-    width: 200px;
-    height: 60px;
-    font-size: small;
-    margin-right: 10px;
-    text-align: center;
-  }
-
-  .aside-index {
-    grid-area: aside;
-    width: 100%;
-    margin-top: 160px;
-    background-color: #6b6b66;
-  }
-
-  h1 {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    font-size: xx-large;
-    text-align: center;
-    font-family: 'Dosis';
-    font-weight: bold;
-  }
-
-  .main-index {
-    margin-top: 160px;
-    grid-area: main;
-    background-color: #767863;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-
-  .pic1 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-content: start;
-  }
-
-  .item {
-    background-color: #171212;
-    width: 20%;
-    height: 260px;
-    color: rgb(255, 255, 255);
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-
-  .foto {
-    width: 100px;
-    height: 100px;
-    border: 1px solid grey;
-    margin-bottom: 10px;
-    border-radius: 5px;
-  }
-
-  .nombre {
-    font-size: medium;
-    font-weight: bold;
-    align-self: start;
-  }
-
-  .descrip {
-    width: auto;
-    padding: 5px;
-    font-size: x-small;
-    align-self: start;
-    text-align: justify;
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-
-  .precio {
-    align-self: end;
-    text-align: end;
-    color: #1098ed;
-    font-weight: bold;
-    font-size: medium;
-    margin-right: 5px;
-  }
-
-  .agregar {
-    width: 70px;
-    height: 25px;
-    padding: 5px 6px;
-    background-color: #ce5504;
-    color: #ffffff;
-    font-size: x-small;
-    font-weight: bold;
-    border: none;
-    border-radius: 10px;
-    margin-top: 5px;
-    align-self: end;
-    margin-right: 5px;
-  }
+   
 
   .suscripcion-index {
     width: 100%;
