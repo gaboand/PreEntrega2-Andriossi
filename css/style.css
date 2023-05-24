@@ -562,13 +562,13 @@
   padding: 0 20px 0;
 }
 
-@media (min-width: 1024p4){
+@media (min-width: 1024px){
 .temporada__container{
   background-color: #232323;
   width: 100%;
   padding: 0 100px 0;
 }
-}
+} 
 
 .temporada__titulo{
   margin-top: 80px;
@@ -609,7 +609,8 @@
 .temporada__container img{
   width: 100%;
   height: 400px;  
-  padding: 10px 20px;
+  padding: 10px 10px;
+  object-fit: contain;
 }
 
 @media (min-width: 1024px){
@@ -752,7 +753,6 @@
 /* contacto */
 
 .contacto__body {
-  overflow: hidden;
   background-color: black;
 }
 
@@ -761,53 +761,37 @@
   flex-direction: column  ;
   align-items: center;
 }
-.contacto__head img{
-  width: 40%;
-  height: 40%x;
-  margin-top: 20px;
-}
 
-.contacto__head h1{
-  margin-top: 20px;
-  font-size: 40px;
+.contacto__h1{
+  padding: 80px 0px 0px;
+  font-size: 30px;
   text-align: center;
   color: #ffffff;
   font-family: 'Montserrat', 'Dosis', sans-serif;
 }
 
-@media (min-width: 1024px){
-  .contacto__head img{
-      width: 10%;
-      height: 10%x;
-      margin-top: 40px;
-}
+@media (min-width: 768px){
 
-.contacto__head h1{
-  margin-top: 20px;
+.contacto__h1{
+  padding: 160px 0px 0px;
   font-size: 40px;
   text-align: center;
   color: #ffffff;
 }
 }
 
-.contacto__principal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
- }
-
 .contacto__contenedor {
-  margin-top: 40px;
+  margin: 15px 30px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(100px);
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 1024px){
+@media (min-width: 768px){
   .contacto__contenedor {
       margin-top: 40px;
   }
@@ -818,7 +802,7 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-  padding: 40px;
+  padding: 20px;
 }
 
 .contacto__contenedor .contacto__mensaje h2 {
